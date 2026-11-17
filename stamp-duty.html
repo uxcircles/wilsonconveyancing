@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Stamp Duty calculator · Wilson Conveyancing</title>
+<meta name="description" content="Estimate Stamp Duty in England, including first-time buyer relief and the non-resident surcharge.">
+<link rel="alternate" hreflang="en" href="https://uxcircles.github.io/wilsonconveyancing/stamp-duty.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://uxcircles.github.io/wilsonconveyancing/zh/stamp-duty.html">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="theme-color" content="#0e0d0c">
+<link rel="preload" href="assets/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/onest.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css?v=2">
+<script defer src="assets/site.js?v=2"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="concept-bar" role="note">
+  <div class="wrap concept-in">
+    <p><span class="concept-tag">Concept</span>Redesign concept. Not the <a href="https://www.wilsonconveyancing.com/" target="_blank" rel="noopener">official Wilson Conveyancing website</a>.</p>
+    <a class="concept-by" href="https://ux-circles.com/professionals" target="_blank" rel="noopener">Designed by <strong>UX CIRCLES</strong> ↗</a>
+  </div>
+</div>
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="./" aria-label="Wilson Conveyancing, home">
+      <svg class="brand-mark" viewBox="0 0 240 225" aria-hidden="true"><path d="M5 103 L120 7 L235 103 M34 79 V205 Q34 218 47 218 H193 Q206 218 206 205 V79 M120 196 C72 162 60 132 74 113 C88 95 110 99 120 117 C130 99 152 95 166 113 C180 132 168 162 120 196 Z"/></svg>
+      <span class="brand-name">Wilson<br>Conveyancing</span>
+    </a>
+    <nav class="nav" aria-label="Main"><a href="services.html">Services</a><a href="stamp-duty.html" aria-current=page>Stamp Duty</a><a href="faqs.html">FAQs</a><a href="./#quote">Free quote</a></nav>
+    <a class="lang" href="zh/stamp-duty.html" lang="zh-Hant" hreflang="zh-Hant">中文</a>
+    <a class="head-call" href="tel:+447830315714">+44 7830 315714</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+  <div class="menu" id="menu" hidden>
+    <nav class="wrap" aria-label="Menu">
+      <a href="services.html">Services</a><a href="stamp-duty.html" aria-current=page>Stamp Duty</a><a href="faqs.html">FAQs</a><a href="./#quote">Free quote</a>
+      <a href="tel:+447830315714">Call +44 7830 315714</a>
+      <a href="https://wa.me/447830315714?text=Hello%20Wilson%2C%20I%20have%20a%20conveyancing%20question.">WhatsApp</a>
+      <a class="lang" href="zh/stamp-duty.html" lang="zh-Hant" hreflang="zh-Hant">中文</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <h1>Stamp Duty calculator</h1>
+    <p class="lede">Residential Stamp Duty Land Tax in England, at the rates in force since 1 April 2025. Includes first-time buyer relief, the 5% higher rates for additional homes and the 2% non-resident surcharge.</p>
+  </div>
+</section>
+<section class="calc-sec">
+  <div class="wrap calc-in">
+    <form class="calc" data-sdlt onsubmit="return false">
+      <label for="sd-price">Purchase price</label>
+      <span class="money big"><span aria-hidden="true">£</span><input id="sd-price" name="price" inputmode="numeric" autocomplete="off" value="350,000"></span>
+      <fieldset><legend>After buying, you will own</legend><div class="pills">
+        <label class="pill"><input type="radio" name="type" value="ftb"><span>My first home ever</span></label>
+        <label class="pill"><input type="radio" name="type" value="home" checked><span>Only this home</span></label>
+        <label class="pill"><input type="radio" name="type" value="add"><span>More than one home</span></label>
+      </div></fieldset>
+      <label class="pill"><input type="checkbox" name="nonres"><span>I am not UK resident</span></label>
+    </form>
+    <div class="calc-out" aria-live="polite">
+      <p class="calc-k">Estimated Stamp Duty</p>
+      <p class="calc-total" data-total>£0</p>
+      <p class="calc-eff" data-eff></p>
+      <table class="bands"><thead><tr><th>Band</th><th>Rate</th><th>Tax</th></tr></thead><tbody data-rows></tbody></table>
+      <div class="calc-notes" data-notes></div>
+      <a class="btn btn-red" data-wa-sdlt href="https://wa.me/447830315714?text=Hello%20Wilson%2C%20could%20you%20check%20my%20Stamp%20Duty%3F">Ask Wilson to check it</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="small calc-foot">An estimate, not advice. Rates checked against GOV.UK in November 2026. Property in Wales pays Land Transaction Tax instead, which this calculator does not cover. Reliefs, mixed-use and properties over £500,000 bought through a company follow other rules.</p>
+  </div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <svg class="foot-mark" viewBox="0 0 240 225" aria-hidden="true"><path d="M5 103 L120 7 L235 103 M34 79 V205 Q34 218 47 218 H193 Q206 218 206 205 V79 M120 196 C72 162 60 132 74 113 C88 95 110 99 120 117 C130 99 152 95 166 113 C180 132 168 162 120 196 Z"/></svg>
+      <p class="foot-name">Wilson Conveyancing</p>
+      <p>CLC Licensed Conveyancing Lawyer<br>Licence number 13589 · England and Wales</p>
+    </div>
+    <div>
+      <p><a href="tel:+447830315714">+44 7830 315714</a><br>Phone and WhatsApp</p>
+      <p>Monday to Friday, 9:30 to 17:00<br><span class="open-now" data-open></span></p>
+      <p><a href="https://uk.trustpilot.com/review/wilsonconveyancing.com" target="_blank" rel="noopener">Reviews on Trustpilot ↗</a></p>
+    </div>
+    <div>
+      <p><a href="services.html">Services</a> · <a href="stamp-duty.html">Stamp Duty</a> · <a href="faqs.html">FAQs</a></p>
+      <p><a href="privacy.html">Privacy and accessibility</a> · <a class="lang" href="zh/stamp-duty.html" lang="zh-Hant" hreflang="zh-Hant">中文</a></p>
+      <p class="small">Calculators on this site give estimates, not legal or tax advice.</p>
+      <p class="small">Unofficial redesign concept by <a href="https://ux-circles.com/professionals" target="_blank" rel="noopener">UX CIRCLES</a></p>
+    </div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+447830315714">Call</a>
+  <a href="https://wa.me/447830315714?text=Hello%20Wilson%2C%20I%20have%20a%20conveyancing%20question.">WhatsApp</a>
+  <a href="./#quote">Free quote</a>
+</nav>
+</body>
+</html>
