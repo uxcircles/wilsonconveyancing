@@ -10,7 +10,7 @@ import urllib.parse
 
 BUILD = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(BUILD)
-V = "2"  # cache-bust: bump on every CSS/JS change
+V = "3"  # cache-bust: bump on every CSS/JS change
 LANG = "en"
 
 
@@ -245,9 +245,9 @@ def header():
     return f'''<body>
 <a class="skip" href="#main">{L("Skip to content", "跳至內容")}</a>
 <div class="concept-bar" role="note">
-  <div class="wrap concept-in">
-    <p><span class="concept-tag">{L("Concept", "概念")}</span>{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Wilson Conveyancing website</a>.', '概念設計，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Wilson Conveyancing 官方網站</a>。')}</p>
-    <a class="concept-by" href="{UXC}" target="_blank" rel="noopener">{L("Designed by", "設計：")} <strong>UX CIRCLES</strong> ↗</a>
+  <div class="wrap concept-inner">
+    <p><span class="concept-tag">{L("Concept", "概念")}</span><span class="concept-long">{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Wilson Conveyancing website</a>.', '網站改版概念設計，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Wilson Conveyancing 官方網站</a>。')}</span></p>
+    <a href="{UXC}" target="_blank" rel="noopener"><span class="concept-by">Designed by </span><strong>UX CIRCLES</strong> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
   </div>
 </div>
 <header class="site-head">
