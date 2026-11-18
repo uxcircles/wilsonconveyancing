@@ -247,7 +247,7 @@ def header():
 <div class="concept-bar" role="note">
   <div class="wrap concept-inner">
     <p><span class="concept-tag">{L("Concept", "概念")}</span><span class="concept-long">{L('Redesign concept. Not the <a href="' + OFFICIAL + '" target="_blank" rel="noopener">official Wilson Conveyancing website</a>.', '網站改版概念設計，並非 <a href="' + OFFICIAL + '" target="_blank" rel="noopener">Wilson Conveyancing 官方網站</a>。')}</span></p>
-    <a href="{UXC}" target="_blank" rel="noopener"><span class="concept-by">Designed by </span><strong>UX CIRCLES</strong> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+    <a href="{UXC}" target="_blank" rel="noopener"><span class="concept-by">{L("Designed by ", "設計：")}</span><strong>UX CIRCLES</strong> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
   </div>
 </div>
 <header class="site-head">
@@ -298,7 +298,7 @@ def footer():
       <p><a href="{pg('services.html')}">{L('Services', '服務')}</a> · <a href="{pg('stamp-duty.html')}">{L('Stamp Duty', '印花稅')}</a> · <a href="{pg('faqs.html')}">{L('FAQs', '常見問題')}</a></p>
       <p><a href="{pg('privacy.html')}">{L('Privacy and accessibility', '私隱及無障礙')}</a> · {switch()}</p>
       <p class="small">{L('Calculators on this site give estimates, not legal or tax advice.', '本網站的計算工具只提供估算，並非法律或稅務意見。')}</p>
-      <p class="small">{L('Unofficial redesign concept by', '非官方概念設計：')} <a href="{UXC}" target="_blank" rel="noopener">UX CIRCLES</a></p>
+      <p class="small">{L('Unofficial redesign concept by ', '非官方概念設計：')}<a href="{UXC}" target="_blank" rel="noopener">UX CIRCLES</a></p>
     </div>
   </div>
 </footer>
